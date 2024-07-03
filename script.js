@@ -91,18 +91,6 @@ audioLoader.load("assets/bg.mp3", function (buffer) {
 });
 
 
-modelLoader.load(
-    "apple.obj",
-    (obj) => {
-        console.log("Model: Apple, loaded");
-        // Change position, rotation, scale here
-        obj.position.x = -1;
-        scene.add(obj);
-    },
-    undefined,
-    undefined
-);
-
 // Animate Scene
 let tick = 0;
 function animate() {
